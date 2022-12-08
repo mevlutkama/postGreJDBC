@@ -2,6 +2,7 @@ import java.sql.*;
 
 public class CallableStatement01 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        // 1.Step: Registration to the driver
         Class.forName("org.postgresql.Driver");
 
         // 2.Step: Create connection with database
