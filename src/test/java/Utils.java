@@ -112,8 +112,10 @@ public class Utils {
 
 
         for (String w : columnName_Values){
-                columnName.append(w.split(" ")[0]).append(",");
-                value.append(w.split(" ")[1]).append(",");
+
+            int firstSpace = w.indexOf(" ");
+                columnName.append(w.substring(0,firstSpace)).append(",");
+                value.append(w.substring(firstSpace)).append(",");
         }
 
         columnName.deleteCharAt(columnName.lastIndexOf(","));

@@ -13,7 +13,7 @@ public class RunnerTest {
         // 4.Step: Execute the query
         Utils.createTable("school", "teachers varchar(50)", "name varchar(10)", "schoolId numeric(3)");
 
-        Utils.insertIntoTable("school", "name 'John'");
+        Utils.insertIntoTable("school", "name 'John'", "teachers 'Mary Cury'");
 
         Utils.dropTable("school");
 
